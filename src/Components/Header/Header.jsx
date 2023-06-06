@@ -1,11 +1,5 @@
-const Header = () => {
-  return (
-    <div>
-      <h1>SportsScore</h1>
-      <p>Login</p>
-      <p>Registrar</p>
-    </div>
-  );
-};
+import React from "react";
 
-export default Header;
+export default function Header() {
+  return <div className="mb-12 text-3xl font-bold underline">Header</div>;
+}
