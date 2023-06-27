@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      current: '#2e2e2e',
+      white: '#fff',
+    },
+    fontFamily: {
+      'sans': ['Outfit'],
+    },
   },
   plugins: [],
 }
