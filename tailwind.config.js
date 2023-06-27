@@ -5,14 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      current: '#2e2e2e',
-      white: '#fff',
+    extend: {
+      colors: {
+        chumbo: '#2e2e2e',
+        white: '#fff',
+      },
+      fontFamily: {
+        'sans': ['Outfit'],
+      },
     },
-    fontFamily: {
-      'sans': ['Outfit'],
-    },
+
   },
   plugins: [],
 }
