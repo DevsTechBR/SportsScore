@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Views/Home/Home.jsx";
+import Futebol from "./Views/Futebol/Futebol";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Futebol />,
   },
 ]);
 

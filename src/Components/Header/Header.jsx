@@ -1,4 +1,3 @@
-import React from "react";
 import search from "../../assets/img/search.svg";
 
 export default function Header() {
