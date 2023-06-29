@@ -4,33 +4,7 @@ import jordanDesactived from "../../assets/img/jordanDesactived.svg";
 import jordanActived from "../../assets/img/jordanActive.svg";
 import premierDesactived from "../../assets/img/premierDesactived.svg";
 import premierActived from "../../assets/img/premierActived.svg";
-
-const ImageToggle = ({ activeImage, inactiveImage }) => {
-  const [isActive, setIsActive] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const handleClick = () => {
-    setIsActive(!isActive);
-  };
-
-  return (
-    <img
-      src={isActive || isHovered ? activeImage : inactiveImage}
-      alt=""
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onClick={handleClick}
-    />
-  );
-};
+import Nav from "../Nav/Nav";
 
 export default function Header() {
   const [premierImage, setPremierImage] = useState(premierDesactived);
@@ -49,15 +23,15 @@ export default function Header() {
       <nav className="w-11/12 p-2 flex justify-between items-center font-bold">
         <h1 className="text-3xl text-white">SportsScore</h1>
         <ul className="flex justify-evenly items-center gap-6 max-sm:justify-end">
-          <li className="text-base text-white cursor-pointer max-sm:hidden">
-            <ImageToggle
+          <li className="text-base text-white cursor-pointer max-sm:hidden hover:bg-active">
+            <Nav
               activeImage={jordanActived}
               inactiveImage={jordanDesactived}
               onClick={handleJordanClick}
             />
           </li>
           <li className="text-base text-white cursor-pointer max-sm:hidden">
-            <ImageToggle
+            <Nav
               activeImage={premierActived}
               inactiveImage={premierDesactived}
               onClick={handlePremierClick}
