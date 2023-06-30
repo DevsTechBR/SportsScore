@@ -1,11 +1,14 @@
+import Banner from "../../Components/Banner/Banner";
 import Header from "../../Components/Header/Header";
 
 const Futebol = () => {
   return (
-    <div className="bg-chumbo h-screen w-full">
+    <div className="bg-chumbo w-full">
       <Header />
-      <div className="m-20 ">
-        <section className="h-56"></section>
+      <div className="mr-20 ml-20 mt-12 mb-12">
+        {/* <section className="h-56 bg-zinc-50"> */}
+        <Banner />
+        {/* </section> */}
         <section>
           <div>
             {/* DivRight */}
