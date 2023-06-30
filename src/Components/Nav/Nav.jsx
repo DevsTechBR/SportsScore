@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Nav({ activeImage, inactiveImage, onClick }) {
+export default function Nav({ activeImage, inactiveImage }) {
   const [isActive, setIsActive] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -14,7 +14,6 @@ export default function Nav({ activeImage, inactiveImage, onClick }) {
 
   const handleClick = () => {
     setIsActive(!isActive);
-    onClick();
   };
 
   return (
