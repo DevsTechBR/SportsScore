@@ -7,6 +7,7 @@ const Futebol = () => {
       <div className="m-20">
         <section className="h-56"></section>
         <section className="flex gap-11">
+          {/* Section 2 */}
           <div>
             {/* DivRight */}
             <div className="my-3.5 flex gap-3 ">
