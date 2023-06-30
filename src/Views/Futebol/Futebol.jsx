@@ -2,27 +2,33 @@ import Header from "../../Components/Header/Header";
 
 const Futebol = () => {
   return (
-    <div className="bg-chumbo h-screen w-full">
+    <div>
       <Header />
-      <div className="m-20 ">
+      <div className="m-20">
         <section className="h-56"></section>
-        <section>
+        <section className="flex gap-11">
+          {/* Section 2 */}
           <div>
             {/* DivRight */}
-            <div>
-              <img src="" alt="" />
-              <img src="" alt="" />
+            <div className="my-3.5 flex gap-3 ">
+              {/* Matches */}
+              <div className="h-20 w-20 bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+                <img src="src\assets\img\premierDesactived.svg" alt="" />
+              </div>
+              <div className="h-20 w-20  bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+                <img src="src\assets\img\jordanDesactived.svg" alt="" />
+              </div>
             </div>
-            <h1 className="text-3xl text-white font-bold">Partidas</h1>
+            <h1 className="text-3xl my-8 text-white font-bold">Partidas</h1>
             <div>
-              <div className="w-[700px] h-20 m-4 font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+              <div className="w-[700px] h-20 my-3.5 font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
                 <span className="text-xl text-white">Real Madrid</span>
                 <div className="w-14 h-14  text-white border-textColor border rounded-full flex items-center justify-center">
                   3 X 2
                 </div>
                 <span className="text-xl text-white ">Real Madrid</span>
               </div>
-              <div className="w-[700px] h-20 m-4 font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+              <div className="w-[700px] h-20 my-3.5 font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
                 <span className="text-xl text-white">Real Madrid</span>
                 <div className="w-14 h-14  text-white border-textColor border rounded-full flex items-center justify-center">
                   3 X 2
@@ -31,7 +37,35 @@ const Futebol = () => {
               </div>
             </div>
           </div>
-          <div>{/* DivLeft */}</div>
+          <div>
+            {/* DivLeft */}
+            <div className="flex flex-col gap-2">
+              {/* Others Matches */}
+              <h1 className="text-sm m-2 text-white font-bold">
+                Outras Partidas
+              </h1>
+              <div className="w-[350px] h-12 font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+                <span className="text-xs text-white">Real Madrid</span>
+                <div className="w-10 h-10 text-xs text-white border-textColor border rounded-full flex items-center justify-center">
+                  3 X 2
+                </div>
+                <span className="text-xs text-white ">Real Madrid</span>
+              </div>
+              <div className="w-[350px] h-12  font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+                <span className="text-xs text-white">Real Madrid</span>
+                <div className="w-10 h-10 text-xs text-white border-textColor border rounded-full flex items-center justify-center">
+                  3 X 2
+                </div>
+                <span className="text-xs text-white ">Real Madrid</span>
+              </div>
+            </div>
+            <div className="flex flex-col gap-1 mt-6">
+              <h1 className="text-sm m-2 text-white font-bold">Notícias</h1>
+              <div className="w-[350px] h-40 bg-cards shadow-boxShadow rounded-xl">
+                {/* News Card */}
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
