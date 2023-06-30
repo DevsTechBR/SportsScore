@@ -4,7 +4,7 @@ const CardsJogos = () => {
       <section className="flex justify-between">
         <div>
           {/* DivRight */}
-          <div className="my-3.5 flex gap-3 ">
+          <div className="flex gap-3 ">
             {/* Matches */}
             <div className="h-20 w-20 bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
               <img src="src\assets\img\premierDesactived.svg" alt="" />
@@ -31,21 +31,19 @@ const CardsJogos = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flex flex-col">
           {/* DivLeft */}
-          <div className="flex my-2.5 flex-col gap-2">
+          <div className="flex flex-col gap-2">
             {/* Others Matches */}
-            <h1 className="text-base my-1 text-white font-bold">
-              Outras Partidas
-            </h1>
-            <div className="w-[350px] h-14 font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+            <h1 className="text-base text-white font-bold">Outras Partidas</h1>
+            <div className="w-[350px] h-12 font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
               <span className="text-xs text-white">Real Madrid</span>
               <div className="w-10 h-10 text-xs text-white border-textColor border rounded-full flex items-center justify-center">
                 3 X 2
               </div>
               <span className="text-xs text-white ">Real Madrid</span>
             </div>
-            <div className="w-[350px] h-14  font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
+            <div className="w-[350px] h-12  font-bold bg-cards shadow-boxShadow rounded-xl flex justify-around items-center">
               <span className="text-xs text-white">Real Madrid</span>
               <div className="w-10 h-10 text-xs text-white border-textColor border rounded-full flex items-center justify-center">
                 3 X 2
@@ -53,8 +51,8 @@ const CardsJogos = () => {
               <span className="text-xs text-white ">Real Madrid</span>
             </div>
           </div>
-          <div className="flex flex-col gap-1 mt-6">
-            <h1 className="text-base m-2 text-white font-bold">Notícias</h1>
+          <div className="flex flex-col gap-2 mt-6">
+            <h1 className="text-base  text-white font-bold">Notícias</h1>
             <div className="w-[350px] h-40 bg-cards shadow-boxShadow rounded-xl">
               {/* News Card */}
             </div>
