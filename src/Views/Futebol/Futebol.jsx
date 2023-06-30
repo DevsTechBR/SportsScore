@@ -1,13 +1,13 @@
+import Banner from "../../Components/Banner/Banner";
 import Header from "../../Components/Header/Header";
 
 const Futebol = () => {
   return (
-    <div>
+    <div className="bg-chumbo w-full">
       <Header />
-      <div className="m-20">
-        <section className="h-56"></section>
-        <section className="flex gap-11">
-          {/* Section 2 */}
+      <div className="mr-20 ml-20 mt-12 mb-12">
+        <Banner />
+        <section> 
           <div>
             {/* DivRight */}
             <div className="my-3.5 flex gap-3 ">
