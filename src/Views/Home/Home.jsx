@@ -9,8 +9,8 @@ const Home = () => {
         <div></div>
       </div>
       <main className="w-full flex relative">
-        <div className="w-2/4 bg-premier bg-no-repeat bg-cover bg-bottom h-screen bg-origin-content"></div>
-        <div className="w-2/4 bg-nba bg-no-repeat bg-cover bg-bottom h-screen"></div>
+        <div className="w-2/4 bg-premier bg-no-repeat bg-cover bg-bottom h-screen bg-origin-content cursor-pointer hover:opacity-60"></div>
+        <div className="w-2/4 bg-nba bg-no-repeat bg-cover bg-bottom h-screen hover:opacity-60 cursor-pointer"></div>
       </main>
     </section>
   );
